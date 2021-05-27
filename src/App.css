@@ -36,3 +36,21 @@
     transform: rotate(360deg);
   }
 }
+
+
+.container {
+  height: 90vh;
+  margin: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.cell {
+  background-color: rgb(241, 179, 179);
+  width: 12.5%;
+  height: 12.5%;
+  text-align: center;
+  padding: 1px ;
+  border-color: #282c34;
+  border-style: solid;
+}
