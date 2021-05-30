@@ -12,21 +12,21 @@ export default function Board() {
   const [player, setPlayer] = useState("X")
 
   const handleClick = (row, func) => {
+    if(row.length < 6){
     let arr = row
     arr.push(player)
     func(arr)
     player === "X" ? setPlayer("O") : setPlayer("X")
     console.log(row)
+    }
+    else {
+      alert("Please try a valid move")
+    }
   }
 
   return (
     <div>
-      <button onClick={() => handleClick(row1, setRow1)}> Click </button>
-      <button onClick={() => handleClick(row2, setRow2)}> Click </button>
-      <button onClick={() => handleClick(row3, setRow3)}> Click </button>
-      <button onClick={() => handleClick(row4, setRow4)}> Click </button>
-      <button onClick={() => handleClick(row5, setRow5)}> Click </button>
-      <button onClick={() => handleClick(row6, setRow6)}> Click </button>
+     
       <h3>Player "{player}'s" Turn</h3>
     <div className="container">
       <Cell click={() => handleClick(row1, setRow1)} char={row1[5] ? row1[5] : ""}/>
