@@ -19,10 +19,10 @@ export default function Cell(props) {
     }
   }
   else{
-  return (
-    <div className="cell" onClick={props.click}>
-      {/* <h3>{props.char}</h3> */}
-    </div>
-  )
+    return (
+      <div className="cell" onClick={props.click}>
+        {/* <h3>{props.char}</h3> */}
+      </div>
+    )
   }
 }
