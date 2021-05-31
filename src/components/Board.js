@@ -27,7 +27,7 @@ export default function Board() {
   return (
     <div>
      
-      <h3>Player "{player}'s" Turn</h3>
+      <h2>Player "{player}'s" Turn</h2>
     <div className="container">
       <Cell click={() => handleClick(row1, setRow1)} char={row1[5] ? row1[5] : ""}/>
       <Cell click={() => handleClick(row2, setRow2)} char={row2[5] ? row2[5] : ""}/>

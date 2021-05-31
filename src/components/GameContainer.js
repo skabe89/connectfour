@@ -7,9 +7,8 @@ export default function GameContainer() {
 
   return (
     <div>
-      <h1>Game Container</h1>
-      <h3>Player 1 Score: {score[0]}</h3>
-      <h3>Player 2 Score: {score[1]}</h3>
+      <h1>Connect Four</h1>
+      <h3>Player 1 Score: {score[0]} || Player 2 Score: {score[1]}</h3>
       <Board />
     </div>
   )
